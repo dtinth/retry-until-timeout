@@ -3,6 +3,7 @@
   "compilerOptions": {
     "types": [
       "heft-jest"
-    ]
+    ],
+    "lib": ["ES2015", "DOM"]
   }
 }

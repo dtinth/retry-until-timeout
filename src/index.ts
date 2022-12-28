@@ -8,7 +8,10 @@
  *  If you want to abort the function after a certain time, you need to implement that logic in the function itself, e.g. by using the `p-timeout` npm package.
  * @returns The result of the function.
  */
-export async function retryUntilTimeout<T>(f: (retryNumber: number) => T, timeout = 15000) {
+export async function retryUntilTimeout<T>(
+  f: (retryNumber: number) => T,
+  timeout = 15000,
+) {
   const start = Date.now()
   let i = 0
   for (;;) {
